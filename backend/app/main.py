@@ -56,7 +56,9 @@ app = FastAPI(title="Simple Stationery Shop API", version="1.0.0", lifespan=life
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173","https://stationery-shopp.netlify.app",
+        "https://stationery-shop.netlify.app",
+        ],
     allow_origin_regex=r"^https?://(localhost|127\.0\.0\.1)(:\d+)?$",
     allow_credentials=True,
     allow_methods=["*"],
